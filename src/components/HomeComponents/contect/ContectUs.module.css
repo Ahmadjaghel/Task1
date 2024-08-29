@@ -14,6 +14,9 @@
 }
 .title div {
   padding: 75px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contect .title div h6 {
   margin: 0 auto 15px auto;

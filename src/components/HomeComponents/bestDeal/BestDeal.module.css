@@ -5,13 +5,8 @@
 .container {
   width: 80%;
   margin: 0px auto;
-  /* padding: 100px 0; */
 }
-.container div:first-child {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
+
 .container div .header {
   display: flex;
   flex-direction: row;
@@ -44,23 +39,15 @@ div h6:first-child::after {
   display: flex;
   gap: 25px;
 }
-.header div:last-child button:first-child {
-  padding: 15px 25px;
-  font-size: 15px;
-  background-color: #ea5e29;
-  color: white;
-  border: none;
-  border-radius: 3px;
-}
-.header div:last-child button {
+.btn {
   cursor: pointer;
   padding: 15px 25px;
   font-size: 15px;
-  background-color: black;
   color: white;
   border: none;
   border-radius: 3px;
 }
+
 .container div .midlle {
   display: flex;
   flex-direction: row;
@@ -72,6 +59,9 @@ div h6:first-child::after {
   margin-top: 50px;
 }
 .midlle .card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   width: 200px;
   padding: 20px 15px;
   background-color: #fafafa;
@@ -100,7 +90,7 @@ div h6:first-child::after {
 }
 .midlle .card div span {
   color: black;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 .midlle img {
@@ -120,22 +110,7 @@ div h6:first-child::after {
   line-height: 35px;
   margin: 15px 0;
 }
-.description div:last-child {
-  position: relative;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  padding-left: 25px;
 
-  align-items: center;
-  color: white;
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-  height: 60px;
-  border-radius: 50px;
-  background-color: black;
-}
 .grIcon {
   position: absolute;
   font-size: 25px;

@@ -1,11 +1,12 @@
 import styles from "./ContectUs.module.css";
+import SectionTitle from "../SectionTitle/SectionTitle";
 const ContectUs = () => {
   return (
     <div className={styles.contectsection}>
       <div className={styles.contect}>
         <div className={styles.title}>
           <div>
-            <h6>PROPERTIES</h6>
+            <SectionTitle title="CONTACT US" />
             <h1>Get In Touch With Our Agents</h1>
           </div>
           <div className={styles.plan}>

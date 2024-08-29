@@ -1,11 +1,11 @@
 .NavBar {
   display: flex;
   justify-content: space-between;
-  margin: 10px auto;
+  margin: 0 auto;
   align-items: center;
   padding: 10px 2px;
-  /* box-shadow: 0px 2px 2px 0px rgb(180, 178, 178); */
   padding: 10px 5%;
+  height: 50px;
 }
 
 .ulNavBar {
@@ -18,31 +18,28 @@
 }
 .ulmenu {
   position: absolute;
-  top: 60px;
-  left: 0;
+  top: 50px;
+  right: 0;
   display: flex;
-  width: 100%;
+  width: 50%;
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
   list-style: none;
   font-size: medium;
-  background-color: rgb(230, 230, 230);
+  background-color: white;
   padding: 10px;
-  transform: translateX(-150%);
-  transition: 0.5s all;
+  transition: 0.2s all;
+  box-shadow: 2px 2px 2px 2px rgb(201, 201, 201);
+  opacity: 0;
+  z-index: 3;
 }
 .active {
-  transform: translateX(0%);
+  opacity: 1;
 }
 .ulNavBar li a,
 .ulmenu li a {
   text-decoration: none;
-  color: black;
-}
-.ulNavBar .home a,
-.ulmenu .home a {
-  color: orangered;
 }
 .ulmenu li {
   border-bottom: solid 1px rgb(214, 214, 214);
@@ -58,7 +55,12 @@
     display: none;
   }
   .NavBar .menu {
-    display: block;
+    display: inline-block;
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ulmenu {
+    display: none;
   }
 }

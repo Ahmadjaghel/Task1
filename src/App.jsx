@@ -1,22 +1,22 @@
 import "./App.css";
-import Featured from "./components/Featured/Featured";
-import NavBar from "./components/NavBar/NavBar";
-import Slider from "./components/Slider/Slider";
-import VideoView from "./components/VideoView/VideoView";
-import BestDeal from "./components/bestDeal/BestDeal";
-import ContectUs from "./components/contect/ContectUs";
-import Properties from "./components/properties/Properties";
-import Footer from "./components/footer/Footer";
+import Home from "./pages/Home/Home";
+import Properties from "./pages/Properties/Properties";
+import { Routes, Route } from "react-router";
+import Property from "./pages/Property/Property";
+import Contact from "./pages/Contact/Contact";
+import NavBar from "./components/HomeComponents/NavBar/NavBar";
+import Footer from "./components/HomeComponents/footer/Footer";
+
 function App() {
   return (
-    <div className="container">
+    <div>
       <NavBar />
-      <Slider />
-      <Featured />
-      <VideoView />
-      <BestDeal />
-      <Properties />
-      <ContectUs />
+      <Routes>
+        <Route path="/" Component={Home} />
+        <Route path="/Properties" Component={Properties} />
+        <Route path="/Property" Component={Property} />
+        <Route path="/Contact" Component={Contact} />
+      </Routes>
       <Footer />
     </div>
   );

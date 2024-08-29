@@ -1,36 +1,29 @@
-.title div {
-  margin: 75px auto;
+.btn {
+  cursor: pointer;
+  padding: 10px 10px;
+  font-size: 12px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 90px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  width: 300px;
-}
-.title div h6 {
-  position: relative;
+  width: 60%;
   margin: 0 auto;
-  width: fit-content;
-  color: rgb(230, 106, 24);
+  flex-wrap: wrap;
 }
-.title div:first-child h1 {
-  font-size: 40px;
-  width: 300px;
-}
-.title div h6:first-child::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 12px;
-  background-color: #ef626b;
-  left: -4px !important;
-}
+
 .grid {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 20px;
-  margin-bottom: 100px;
-  margin: 20px auto 100px auto;
+  margin: 50px auto;
   width: 75%;
 }
 .grid .card {
@@ -41,6 +34,7 @@
   flex-direction: column !important;
   gap: 15px !important;
   width: 250px;
+  height: 480px;
 }
 .grid div img {
   border-radius: 10px;
@@ -118,4 +112,30 @@
   font-weight: bold;
   cursor: pointer;
   margin-top: 25px;
+}
+.numbers {
+  display: flex;
+  gap: 5px;
+  margin: 50px auto;
+  justify-content: center;
+}
+.numbers .active {
+  border-radius: 50%;
+  background-color: orangered;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.numbers .number {
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -24,8 +24,8 @@ function Slider() {
   return (
     <div className="slider">
       <div className="slider-container">
-        {images.map((ele) => (
-          <img src={ele} />
+        {images.map((ele, ind) => (
+          <img src={ele} key={ind} />
         ))}
       </div>
       <div className="content-slider">

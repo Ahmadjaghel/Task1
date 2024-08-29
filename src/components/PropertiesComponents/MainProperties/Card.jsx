@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-import styles from "./Properties.module.css";
+import styles from "./MainProperties.module.css";
 export const Card = ({ item }) => {
   const {
     img,
